@@ -15,11 +15,8 @@ class Knopka(Frame):
             rez = ''
 
     def __init__(self, parent=None, sym='#'):
-        self.sym = sym
         Frame.__init__(self, parent)
-        but = Button(self, text=self.sym, width=8,
-                     command=lambda: self.rec(self.sym))
-        but.grid()
+        Button(self, text=sym, width=8, command=lambda: self.rec(sym)).grid()
 
 
 if __name__ == '__main__':
